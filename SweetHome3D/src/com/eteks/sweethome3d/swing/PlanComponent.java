@@ -2023,9 +2023,9 @@ public class PlanComponent extends JComponent implements PlanView, Scrollable, P
       return NO_SUCH_PAGE;
     }
     this.home.setSelectedLevel(viewableLevels.get(pageIndex));
-    int PAGE = printSelectedLevel(g, pageFormat, 0);
+    int pageExists = printSelectedLevel(g, pageFormat, 0);
     this.home.setSelectedLevel(initialLevel);
-    return PAGE;
+    return pageExists;
   }
 
 
